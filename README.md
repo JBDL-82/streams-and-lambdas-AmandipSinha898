@@ -31,6 +31,7 @@ String s =    empObj.stream()
                     .filter(x-> x.salary > 50000)
                     .map(x-> x.name)
                    .reduce("",(x,y)-> x + " " + y);
+```
 ---
 
 #### **Q2. Word Frequency Counter**
@@ -46,6 +47,7 @@ Output: {apple=2, banana=1}
 Map<String, Integer> hm= new HashMap<>();
 lst.stream()
    .forEach(element -> { hm.put(element, hm.getOrDefault(element, 0) + 1); });
+```
 ---
 
 #### **Q3. Group Employees by Department**
