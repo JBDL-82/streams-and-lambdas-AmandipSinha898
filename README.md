@@ -25,6 +25,7 @@ class Employee {
     String name;
     double salary;
 }
+```
 ```java
 String s =    empObj.stream()
                     .filter(x-> x.salary > 50000)
@@ -38,6 +39,8 @@ Given a list of words, return a map with the frequency of each word.
 ```java
 Input: ["apple", "banana", "apple"]
 Output: {apple=2, banana=1}
+
+```
 
 ```java
 Map<String, Integer> hm= new HashMap<>();
