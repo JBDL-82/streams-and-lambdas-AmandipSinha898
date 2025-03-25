@@ -26,7 +26,12 @@ class Employee {
     double salary;
 }
 ```
-
+```java
+String s =    empObj.stream()
+                    .filter(x-> x.salary > 50000)
+                    .map(x-> x.name)
+                   .reduce("",(x,y)-> x + " " + y);
+```
 ---
 
 #### **Q2. Word Frequency Counter**
@@ -35,8 +40,14 @@ Given a list of words, return a map with the frequency of each word.
 ```java
 Input: ["apple", "banana", "apple"]
 Output: {apple=2, banana=1}
+
 ```
 
+```java
+Map<String, Integer> hm= new HashMap<>();
+lst.stream()
+   .forEach(element -> { hm.put(element, hm.getOrDefault(element, 0) + 1); });
+```
 ---
 
 #### **Q3. Group Employees by Department**
